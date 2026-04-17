@@ -1,4 +1,4 @@
-# 🚀 JISSP Project Team — About Us
+# 🚀 Project Team — About Us
 
 A modern, visually stunning **"About Us"** web page built for the JISSP college project team. Designed to showcase team members, their roles, and the collective mission — with a futuristic, premium dark-themed UI.
 

@@ -518,6 +518,15 @@ img {
   overflow: hidden;
 }
 
+.team-card__avatar-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
 .team-card__avatar-bg {
   position: absolute;
   inset: 0;

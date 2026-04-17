@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
             backdrop-filter: blur(16px);
             text-align: center;
         }
+
         .profile-avatar {
             width: 150px;
             height: 150px;
@@ -25,12 +27,14 @@
             box-shadow: 0 0 25px rgba(0, 229, 255, 0.3), 0 0 50px rgba(0, 229, 255, 0.1);
             overflow: hidden;
         }
+
         .profile-avatar img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
+
         .profile-name {
             font-size: 2.5rem;
             margin-bottom: 5px;
@@ -38,6 +42,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .profile-role {
             font-size: 1.2rem;
             color: #00e5ff;
@@ -45,12 +50,14 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
+
         .profile-bio {
             color: #9ca3af;
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 30px;
         }
+
         .profile-details {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -60,14 +67,28 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 30px;
         }
+
         .detail-item h4 {
             color: #fff;
             font-size: 1.1rem;
             margin-bottom: 8px;
         }
+
         .detail-item p {
             color: #9ca3af;
         }
+
+        .detail-item a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .detail-item a:hover {
+            color: #00e5ff;
+            text-decoration: underline;
+        }
+
         .back-btn {
             display: inline-block;
             margin-top: 30px;
@@ -79,11 +100,13 @@
             border-radius: 30px;
             transition: all 0.3s ease;
         }
+
         .back-btn:hover {
             background: rgba(0, 229, 255, 0.2);
             box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
             color: #fff;
         }
+
         @media (max-width: 600px) {
             .profile-details {
                 grid-template-columns: 1fr;
@@ -91,6 +114,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="bg-canvas" aria-hidden="true">
         <div class="bg-orb bg-orb--cyan"></div>
@@ -101,21 +125,26 @@
 
     <main class="page-wrapper">
         <div class="profile-wrapper">
-            <div class="profile-avatar"><img src="images/sunanda.png" alt="Sunanda Dutta"></div>
+            <div class="profile-avatar"><img src="images/Sunanda.jpg" alt="Sunanda Dutta"></div>
             <h1 class="profile-name">Sunanda Dutta</h1>
             <h2 class="profile-role">Full-Stack Developer - WEB & EMBEDDED SYSTEM</h2>
             <div class="profile-bio">
-                Expert in building robust, scalable full-stack web applications and bridging the gap between web platforms and embedded hardware. Strong foundation in modern JavaScript frameworks and embedded programming.
+                Sunanda Dutta is the lead software developer of the team, building robust systems that power our
+                innovations. He has played a key role in developing and integrating software for projects like CNC
+                plotters, laser engravers, and 3D printers—ensuring seamless interaction between hardware and
+                intelligent applications. He has Strong foundation in modern JavaScript frameworks and embedded
+                programming.
             </div>
-            
+
             <div class="profile-details">
                 <div class="detail-item">
                     <h4>Education</h4>
-                    <p>B.Tech / Diploma in Computer Science</p>
+                    <p>Diploma in Computer Science Technology</p>
                 </div>
                 <div class="detail-item">
                     <h4>Core Skills</h4>
-                    <p>JavaScript, Node.js, React, C++, Microcontrollers</p>
+                    <p>Embedded Programming (C/C++), IoT Systems, Microcontroller Programming, G code, Hardware-Software
+                        Integration, JS, Wordpress </p>
                 </div>
                 <div class="detail-item">
                     <h4>Experience</h4>
@@ -123,7 +152,10 @@
                 </div>
                 <div class="detail-item">
                     <h4>Contact</h4>
-                    <p>sunanda@example.com <br> github.com/sunandadutta</p>
+                    <p><a href="mailto:duttasunanda730@gmail.com">duttasunanda730@gmail.com</a> <br> <a
+                            href="https://github.com/sunandadutta730" target="_blank">GitHub</a> <br>
+                        <a href="https://www.linkedin.com/in/sunanda-dutta-a7b2b6322/" target="_blank">LinkedIn</a>
+                    </p>
                 </div>
             </div>
 
@@ -131,4 +163,5 @@
         </div>
     </main>
 </body>
+
 </html>
