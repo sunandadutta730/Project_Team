@@ -24,45 +24,57 @@
 
         <!-- ======== HERO ======== -->
         <header class="hero" id="hero">
-            <div class="hero__badge">
-                <span class="hero__badge-dot"></span>
-                Project Team
-            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero__badge-wrapper">
+                        <div class="hero__badge">
+                            <span class="hero__badge-dot"></span>
+                            <span class="tracking-in-expand">SYSTEM INITIALIZED </span>
+                        </div>
+                    </div>
 
-            <div class="hero__logo">
-                <div class="hero__logo-ring"></div>
-                <svg class="hero__logo-img" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="44" stroke="url(#logoGrad)" stroke-width="2.5" fill="none" />
-                    <circle cx="50" cy="50" r="30" stroke="rgba(0,229,255,0.3)" stroke-width="1.5" fill="none"
-                        stroke-dasharray="4 6" />
-                    <circle cx="50" cy="50" r="16" stroke="rgba(0,229,255,0.2)" stroke-width="1" fill="none"
-                        stroke-dasharray="2 4" />
-                    <!-- Central node -->
-                    <circle cx="50" cy="50" r="6" fill="url(#logoGrad)" />
-                    <!-- Orbital nodes -->
-                    <circle cx="50" cy="6" r="3" fill="#00e5ff" opacity="0.8" />
-                    <circle cx="88" cy="72" r="3" fill="#0072ff" opacity="0.8" />
-                    <circle cx="12" cy="72" r="3" fill="#7c3aed" opacity="0.8" />
-                    <!-- Connection lines -->
-                    <line x1="50" y1="50" x2="50" y2="9" stroke="rgba(0,229,255,0.25)" stroke-width="1" />
-                    <line x1="50" y1="50" x2="86" y2="71" stroke="rgba(0,114,255,0.25)" stroke-width="1" />
-                    <line x1="50" y1="50" x2="14" y2="71" stroke="rgba(124,58,237,0.25)" stroke-width="1" />
-                    <defs>
-                        <linearGradient id="logoGrad" x1="0" y1="0" x2="100" y2="100">
-                            <stop offset="0%" stop-color="#00e5ff" />
-                            <stop offset="100%" stop-color="#0072ff" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+                    <h1 class="hero-title-main">
+                        <span class="text-glow">Project</span>
+                        <span class="hero-title-accent">Team</span>
+                    </h1>
 
-            <h1 class="hero__title">
-                About <span class="hero__title-gradient">Us</span>
-            </h1>
-            <p class="hero__subtitle">
-                A passionate team of college students from JISSP, driven by curiosity and a love for technology.
-            </p>
-            <hr class="hero__divider">
+                    <p class="hero-subtitle-typewriter">
+                        We are a collective of engineering students engineering the future. Driven by curiosity, fueled
+                        by code, and united by technology.
+                    </p>
+
+                    <div class="hero-action">
+                        <a href="#about" class="explore-btn">
+                            Explore Our Mission
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 5v14M19 12l-7 7-7-7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hologram-circle">
+                        <div class="hologram-ring outer"></div>
+                        <div class="hologram-ring middle"></div>
+                        <div class="hologram-ring inner"></div>
+                        <div class="hologram-core">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="16" stroke="rgba(0,229,255,0.8)" stroke-width="2" fill="none"
+                                    stroke-dasharray="2 4" />
+                                <circle cx="50" cy="50" r="6" fill="#00e5ff" />
+                                <circle cx="50" cy="6" r="4" fill="#00e5ff" opacity="0.9" />
+                                <circle cx="88" cy="72" r="4" fill="#0072ff" opacity="0.9" />
+                                <circle cx="12" cy="72" r="4" fill="#7c3aed" opacity="0.9" />
+                                <line x1="50" y1="50" x2="50" y2="10" stroke="rgba(0,229,255,0.4)" stroke-width="2" />
+                                <line x1="50" y1="50" x2="84" y2="69" stroke="rgba(0,114,255,0.4)" stroke-width="2" />
+                                <line x1="50" y1="50" x2="16" y2="69" stroke="rgba(124,58,237,0.4)" stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <!-- ======== WHO WE ARE ======== -->
@@ -199,8 +211,8 @@
                         </div>
                     </div>
                     <h3 class="team-card__name">Krish Karmakar</h3>
-                    <p class="team-card__role">ETCE Specialist</p>
-                    <span class="team-card__role-tag">Electronics</span>
+                    <p class="team-card__role">Electronics & Hardware </p>
+                    <span class="team-card__role-tag">Electronics Engineer</span>
                     <a href="krish.html"
                         style="display: inline-block; margin-top: 15px; padding: 8px 20px; border: 1px solid rgba(0, 229, 255, 0.3); color: #00e5ff; text-decoration: none; border-radius: 20px; font-size: 0.85rem; transition: all 0.3s;"
                         onmouseover="this.style.background='rgba(0, 229, 255, 0.1)'; this.style.boxShadow='0 0 10px rgba(0, 229, 255, 0.2)';"
@@ -215,8 +227,8 @@
                         </div>
                     </div>
                     <h3 class="team-card__name">Prosenjit Mondal</h3>
-                    <p class="team-card__role">EE Specialist</p>
-                    <span class="team-card__role-tag">Electrical</span>
+                    <p class="team-card__role">Power & Industrial Systems</p>
+                    <span class="team-card__role-tag">Electrical Engineer</span>
                     <a href="prosenjit.html"
                         style="display: inline-block; margin-top: 15px; padding: 8px 20px; border: 1px solid rgba(0, 229, 255, 0.3); color: #00e5ff; text-decoration: none; border-radius: 20px; font-size: 0.85rem; transition: all 0.3s;"
                         onmouseover="this.style.background='rgba(0, 229, 255, 0.1)'; this.style.boxShadow='0 0 10px rgba(0, 229, 255, 0.2)';"
@@ -246,7 +258,7 @@
                         <div class="team-card__avatar-ring"></div>
                         <div class="team-card__avatar-inner">
                             <div class="team-card__avatar-bg"></div>
-                            <img src="images/ayan.png" alt="Ayan Das">
+                            <img src="images/Ayan.jpeg" alt="Ayan Das">
                         </div>
                     </div>
                     <h3 class="team-card__name">Ayan Das</h3>

@@ -40,6 +40,7 @@
             margin-bottom: 5px;
             background: linear-gradient(to right, #fff, #a5b4fc);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -189,24 +190,64 @@
         <div class="profile-wrapper">
             <div class="profile-avatar"><img src="images/Prosenjit.jpeg" alt="Prosenjit"></div>
             <h1 class="profile-name">Prosenjit Mondal</h1>
-            <h2 class="profile-role">EE Specialist - Electrical</h2>
+            <h2 class="profile-role">Electrical Engineer – Power Systems & Industrial Operations</h2>
             <div class="profile-bio">
-                Expert in electrical systems, power distribution, and energy management. Ensures that all hardware
-                components receive stable power and operate safely within the project ecosystem.
+                <p>
+                    Prosenjit Mondal is the Electrical Engineer of the team, responsible for end-to-end electrical
+                    systems,
+                    power distribution, and hardware execution. He plays a critical role in ensuring all components
+                    operate
+                    reliably and safely within the system. With strong hands-on expertise, he manages wiring, electrical
+                    integration, and machine-level operations in the workshop.
+                </p>
+                <div id="more-text" style="display: none; margin-top: 15px;">
+                    <p>
+                        He is known for his creative and practical approach to problem-solving, contributing innovative
+                        ideas to
+                        structural and system design. Prosenjit also guides team members during execution—providing
+                        clarity on
+                        tasks, workflow, and implementation strategies. A fast learner with strong time management
+                        skills, he
+                        adapts quickly across different technical domains and consistently meets project deadlines. His
+                        ability
+                        to handle heavy-duty work and operate various workshop machines, including fabrication and
+                        carpentry
+                        tasks, makes him a versatile and dependable asset to the team.
+                    </p>
+                </div>
+                <button id="read-more-btn" onclick="toggleBio()"
+                    style="background: none; border: none; color: #00e5ff; font-size: 0.9rem; cursor: pointer; margin-top: 10px; padding: 0; text-decoration: underline; font-weight: 500; transition: color 0.3s;">Read
+                    more</button>
+
+                <script>
+                    function toggleBio() {
+                        var moreText = document.getElementById("more-text");
+                        var btnText = document.getElementById("read-more-btn");
+
+                        if (moreText.style.display === "none") {
+                            moreText.style.display = "block";
+                            btnText.innerHTML = "Read less";
+                        } else {
+                            moreText.style.display = "none";
+                            btnText.innerHTML = "Read more";
+                        }
+                    }
+                </script>
             </div>
 
             <div class="profile-details">
                 <div class="detail-item">
                     <h4>Education</h4>
-                    <p>B.Tech in Electrical Engineering</p>
+                    <p>Diploma in Electrical Engineering (2nd Year)</p>
                 </div>
                 <div class="detail-item">
                     <h4>Core Skills</h4>
-                    <p>Power Systems, Motor Control, Safety Standards</p>
+                    <p>Power Systems, Motor Control, Industrial Wiring, Machine Operations</p>
                 </div>
                 <div class="detail-item">
                     <h4>Experience</h4>
-                    <p>Electrical Engineering, Automation</p>
+                    <p>Electrical Infrastructure, System Integration, Fabrication & Workshop Jobs
+                        Execution</p>
                 </div>
                 <div class="detail-item" style="position: relative; z-index: 10;">
                     <h4>Contact</h4>
